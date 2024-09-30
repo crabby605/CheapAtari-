@@ -7,8 +7,8 @@ using namespace std;
 void runFlappyBird();
 void runSnake();
 void runSpaceInvaders();
+void runBreakout();
 void exitProgram();
-
 int main() {
     int choice;
 
@@ -18,7 +18,8 @@ int main() {
         cout<< "1. Run Flappy Bird\n";
         cout<< "2. Run Snake\n";
         cout<< "3. Run Space Invaders\n";
-        cout<< "4. Exit\n";
+        cout<< "4. Run Breakout\n";
+        cout<< "5. Exit\n";
         cout<< "Enter your choice: ";
         cin>> choice;
 
@@ -59,6 +60,12 @@ void runSpaceInvaders() {
     cout << "Running Space Invaders...\n";
    
     system("space_invaders.exe");
+}
+
+void runBreakout() {
+cout << "Running Breakout...|n";
+
+system("breakout.exe");
 }
 
 void exitProgram() {
