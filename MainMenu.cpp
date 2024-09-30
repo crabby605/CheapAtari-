@@ -4,10 +4,10 @@
 using namespace std;
 
 
-void runFlappyBird();
+void runBreakout();
 void runSnake();
 void runSpaceInvaders();
-void runPong();
+void runBreakout();
 void exitProgram();
 int main() {
     int choice;
@@ -15,7 +15,7 @@ int main() {
     do {
         
         cout<< "Menu:\n";
-        cout<< "1. Run Pong\n";
+        cout<< "1. Run Breakout\n";
         cout<< "2. Run Snake\n";
         cout<< "3. Run Space Invaders\n";
         cout<< "4. Run Pong\n";
@@ -25,7 +25,7 @@ int main() {
 
         switch (choice) {
             case 1:
-                runFlappyBird();
+                runBreakout();
                 break;
             case 2:
                 runSnake();
@@ -47,10 +47,10 @@ int main() {
     return 0;
 }
 
-void runFlappyBird() {
-    cout << "Running Flappy Bird...\n";
+void runBreakout() {
+    cout << "Running Breakout...\n";
 
-    system("flappy_bird.exe");
+    system("Breakout.exe");
 }
 
 void runSnake() {
