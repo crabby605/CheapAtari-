@@ -1,35 +1,27 @@
-//
-// Created by Pamela Vincze on 2016-08-23.
-//
+#pragma once
 
-#ifndef PONG_BALL_H
-#define PONG_BALL_H
+#include "resource.h"
+#include "Point2D.h"
 
-#include <ncurses.h>
+#define RECOIL_X_MAX 300
 
-class Ball {
+class Ball
+{
 public:
-    Ball(double x, double y, int speed);
-    double getX() { return x; }
-    double getY() { return y; }
-    int getSpeed() { return speed; }
-    void setX(double a) {
-        x = a;
-    }
-    void setY(double a) {
-        y = a;
-    }
-    void setSpeed(int a){
-        speed = a;
-    }
-    void drawBall(double x, double y) {
-        mvaddch(x, y, 'o');
-    }
-private:
-    double x, y;
-    int speed;
+	Ball();
+	~Ball();
 
+	void Reset();
+	void Initialize(ID2D1HwndRenderTarget* m_pRenderTarget);
+	void Advance(double elapsedTime);
+	void CheckHitsPaddle(float paddleX);
+	boolean IsOutside();
+	void Draw(ID2D1HwndRenderTarget* m_pRenderTarget);
+
+	Point2D position;
+	Point2D speed;
+private:
+
+	ID2D1SolidColorBrush* m_pRedBrush;
 };
 
-
-#endif //PONG_BALL_H
