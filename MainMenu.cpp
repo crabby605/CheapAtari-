@@ -7,7 +7,7 @@ using namespace std;
 void runFlappyBird();
 void runSnake();
 void runSpaceInvaders();
-void runBreakout();
+void runPong();
 void exitProgram();
 int main() {
     int choice;
@@ -15,10 +15,10 @@ int main() {
     do {
         
         cout<< "Menu:\n";
-        cout<< "1. Run Flappy Bird\n";
+        cout<< "1. Run Pong\n";
         cout<< "2. Run Snake\n";
         cout<< "3. Run Space Invaders\n";
-        cout<< "4. Run Breakout\n";
+        cout<< "4. Run Pong\n";
         cout<< "5. Exit\n";
         cout<< "Enter your choice: ";
         cin>> choice;
@@ -34,7 +34,7 @@ int main() {
                 runSpaceInvaders();
                 break;
             case 4:
-                runBreakout();
+                runPong();
                 break;
              case 5:
                 exitProgram();
@@ -65,10 +65,10 @@ void runSpaceInvaders() {
     system("space_invaders.exe");
 }
 
-void runBreakout() {
-cout << "Running Breakout...|n";
+void runPong() {
+cout << "Running Pong...|n";
 
-system("breakout.exe");
+system("Pong.exe");
 }
 
 void exitProgram() {
