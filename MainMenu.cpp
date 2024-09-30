@@ -34,6 +34,9 @@ int main() {
                 runSpaceInvaders();
                 break;
             case 4:
+                runBreakout();
+                break;
+             case 5:
                 exitProgram();
                 break;
             default:
