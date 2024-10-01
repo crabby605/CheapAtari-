@@ -50,25 +50,25 @@ int main() {
 void runBreakout() {
     cout << "Running Breakout...\n";
 
-    system("Breakout.exe");
+    system("/breakout/Breakout.exe");
 }
 
 void runSnake() {
     cout << "Running Snake...\n";
   
-    system("snake.exe");
+    system("/snake/snake.exe");
 }
 
 void runSpaceInvaders() {
     cout << "Running Space Invaders...\n";
    
-    system("space_invaders.exe");
+    system("/space_invadars/space_invaders.exe");
 }
 
 void runPong() {
 cout << "Running Pong...|n";
 
-system("Pong.exe");
+system("/pong/Pong.exe");
 }
 
 void exitProgram() {
