@@ -1,6 +1,6 @@
 //
 // Created by Pamela Vincze on 2016-08-23.
-//
+// took some help from this guy and his snippet
 
 #ifndef PONG_PLAYER_H
 #define PONG_PLAYER_H
